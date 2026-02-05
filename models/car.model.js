@@ -1,11 +1,10 @@
-import { option } from "./option.model";
-
-class Car{
-    constructor(name, rentalPrice, transmitionType, carburantType) {
+class Car {
+    constructor(id, name, imgUrl, rentalPrice) {
+        this.id = id;
         this.name = name;
+        this.imgUrl = imgUrl;
         this.rentalPrice = rentalPrice;
-        this.transmitionType = transmitionType;
-        this.option = option;
-        this.carburantType = carburantType;
     }
 }
+
+module.exports = Car;
